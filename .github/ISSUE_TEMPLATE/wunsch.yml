@@ -1,0 +1,16 @@
+name: Wunsch äußern
+description: Dir fehlt eine Funktion oder etwas könnte einfacher sein
+title: "[Wunsch] "
+labels: ["wunsch"]
+body:
+  - type: dropdown
+    id: paket
+    attributes:
+      label: Paket
+      options: [Mini-Shop, Seminare, Shop-Theme, Seminar-Theme]
+    validations: { required: true }
+  - type: textarea
+    id: wunsch
+    attributes:
+      label: Was wünschst du dir, und wofür brauchst du es?
+    validations: { required: true }

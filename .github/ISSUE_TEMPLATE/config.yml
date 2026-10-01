@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Sicherheitslücke melden
+    url: mailto:hello@nordwerk.studio
+    about: Bitte nicht öffentlich, sondern per Mail.
+  - name: Beratung und Anpassungen
+    url: https://www.nordwerk.studio/contao#pilot
+    about: Fragen vor dem Kauf oder Anpassungen an deiner Contao-Seite

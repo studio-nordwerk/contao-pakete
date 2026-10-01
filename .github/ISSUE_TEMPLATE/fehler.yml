@@ -1,0 +1,40 @@
+name: Fehler melden
+description: Etwas funktioniert nicht wie erwartet
+title: "[Fehler] "
+labels: ["fehler"]
+body:
+  - type: dropdown
+    id: paket
+    attributes:
+      label: Paket
+      options: [Mini-Shop, Seminare, Shop-Theme, Seminar-Theme]
+    validations: { required: true }
+  - type: input
+    id: version
+    attributes:
+      label: Version des Pakets
+      description: Steht im Contao Manager oder auf deiner Download-Seite, z. B. 0.1.1
+    validations: { required: true }
+  - type: input
+    id: contao
+    attributes:
+      label: Contao- und PHP-Version
+      placeholder: z. B. Contao 5.7.12, PHP 8.3
+    validations: { required: true }
+  - type: textarea
+    id: schritte
+    attributes:
+      label: Was hast du getan?
+      description: Schritt für Schritt, damit wir es nachstellen können.
+    validations: { required: true }
+  - type: textarea
+    id: ergebnis
+    attributes:
+      label: Was ist passiert, und was hättest du erwartet?
+    validations: { required: true }
+  - type: textarea
+    id: meldung
+    attributes:
+      label: Fehlermeldung oder Log-Ausschnitt (optional)
+      description: Zum Beispiel aus var/logs/. Bitte keine Passwörter, Zugangsdaten oder Kundendaten.
+      render: text
