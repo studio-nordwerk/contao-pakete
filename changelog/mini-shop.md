@@ -1,5 +1,20 @@
 # Mini-Shop: Was ist neu?
 
+## 0.4.1 vom 2. Oktober 2026
+
+**Verbessert**
+- Die Bestellmail ist neu aufgebaut, wie in modernen Shops: oben Dank, ein Button „Bestellung ansehen“ und bei Vorkasse ein Kasten mit Betrag, IBAN, Verwendungszweck, Fälligkeit und GiroCode. Darunter die Produkte als kompakte Zeilen mit Bild, Größe und Preis, die Summen und die Bestelldetails. Die Pflichttexte (wesentliche Merkmale, Widerrufsbelehrung, Muster-Formular, AGB, Gewährleistung) stehen klein am Ende, deine Anbieterangaben als Fußzeile.
+- Zahlungserinnerung, Zahlungseingang, Versand und Storno nutzen denselben Aufbau.
+- Die Mail an dich selbst begrüßt nicht mehr die Kundin, sondern nennt sie: „Neue Bestellung von …“, mit Link direkt zur Bestellung im Backend.
+- Kategorien haben einen eigenen Menüpunkt „Kategorien“ unter Inhalte, gleich neben „Produkte“.
+- Die Einrichtung warnt, wenn im Muster-Widerrufsformular noch ein Platzhalter wie „[Firmenname … einfügen]“ steht.
+
+**Behoben**
+- Klammern aus den Rechtstexten erscheinen in Mails nicht mehr als „&#40;“.
+- Die Rechtsform steht nicht mehr als interner Wert („sole“) in der Mail, leere Angaben erzeugen keine Leerzeilen mehr.
+
+**Nach dem Update:** Im Contao Manager den Prod-Cache leeren und neu erzeugen. Das Widerruf-Bundle wird dabei auf 1.1 aktualisiert.
+
 ## 0.4.0 vom 2. Oktober 2026
 
 **Neu**
