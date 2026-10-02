@@ -1,8 +1,29 @@
 # Mini-Shop: Was ist neu?
 
-## Nächste Version (in Arbeit)
+## 0.3.0 vom 2. Oktober 2026
 
+**Neu**
+- Eine neue, ruhigere Shop-Oberfläche: Produktkarten mit großem Bild, Produktseite mit Kaufbereich, Mengenwähler und aufklappbaren Abschnitten, Warenkorb mit Fortschritt bis zum kostenlosen Versand, Kasse in drei Schritten (Warenkorb, Angaben, Prüfen) und eine übersichtliche Bestätigung.
+- Eigene Seiten für Warenkorb und Kasse mit verständlichen Adressen wie `/warenkorb`, `/kasse`, `/kasse/pruefen` und `/kasse/danke`. Jedes Produkt hat eine feste Adresse unter deiner Shop-Seite, zum Beispiel `/shop/lavendelseife`. Im Assistenten legst du die Seiten mit „Seiten anlegen“ an.
+- Kategorien: Produkte in Kategorien wie „Seifen“ oder „Pflege“ einteilen und auf normalen Contao-Seiten zeigen. Reihenfolge („Neueste zuerst“, Preis, manuell) und Anzahl stellst du im Produktlisten-Element ein, zum Beispiel für „Neu im Shop“ auf der Startseite.
+- Drei Kartenstile im Produktlisten-Element: Katalog (Standard), mit Button oder mit Plus-Symbol auf dem Bild.
+- Brotkrümel auf Produkt- und Kategorieseiten, wenn du das Contao-Modul einbindest.
+
+**Verbessert**
+- In der Bestellprüfung stehen Waren, wesentliche Merkmale und Gesamtpreis direkt über „Zahlungspflichtig bestellen“.
+- Der Grundpreis steht jetzt auch im Warenkorb, in der Kassenübersicht und in der Bestellprüfung.
+- Wählst du an der Kasse Abholung, rechnet die Übersicht sofort ohne Versandkosten.
+- Das Warenkorb-Symbol springt beim Seitenwechsel nicht mehr, die Anzahl bleibt stehen.
+- Mengenänderungen im Warenkorb speichern sich selbst, und „Zur Kasse“ übernimmt geänderte Mengen auch ohne JavaScript.
+- Eingabefelder und leise Texte haben mehr Kontrast und sind besser lesbar.
 - Wenn die Einrichtung noch unvollständig ist, nimmt der Shop freundlich keine Bestellungen an und zeigt dir im Backend, was fehlt, statt einer Fehlerseite.
+
+**Behoben**
+- Die Eingabetaste im Mengenfeld entfernt keinen Artikel mehr aus dem Warenkorb.
+- „Entfernen“ funktioniert auch, wenn ein anderes Mengenfeld leer ist.
+- Ohne eingetragene Lieferzeit erscheint kein leeres „Lieferzeit: .“ mehr.
+
+**Nach dem Update:** Dein Shop funktioniert ohne neue Einrichtung weiter, alte Warenkorb- und Kassenlinks leiten automatisch um. Im Contao Manager unter Systemwartung den Prod-Cache leeren und neu erzeugen. Hast du eigene Vorlagen im Template Studio überschrieben, sieh sie dir einmal an: Die neue Oberfläche bringt neue Vorlagen mit.
 
 ## 0.2.0 vom 1. Oktober 2026
 

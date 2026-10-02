@@ -1,10 +1,21 @@
 # Seminare: Was ist neu?
 
-## Nächste Version (in Arbeit)
+## 0.2.0 vom 2. Oktober 2026
 
 **Neu**
-- Die Bankverbindung lässt sich im Assistenten ändern. Die Buchungsbestätigung enthält einen GiroCode zum Scannen.
-- Eine automatische Zahlungserinnerung, wenn eine Buchung nicht bezahlt wurde.
+- Eine neue, ruhigere Oberfläche: Terminkarten mit großem Bild, Datum und freien Plätzen, eine Detailseite mit klarem Buchungskasten und die Anmeldung in drei Schritten (Termin, Angaben, Prüfen).
+- Verständliche Adressen für die Buchung, zum Beispiel `/seminare/kraeuter-workshop/buchen`, `/pruefen` und `/danke`. Alte Buchungslinks leiten automatisch weiter.
+- Die Bestätigung zeigt den Überweisungsbetrag, die IBAN gut lesbar in Vierergruppen und einen GiroCode zum Scannen.
+- Die Bankverbindung lässt sich im Assistenten ändern, und eine automatische Zahlungserinnerung geht raus, wenn eine Buchung nicht bezahlt wurde.
+
+**Verbessert**
+- Zwei Anmeldungen zum selben Termin in zwei Tabs bleiben getrennt, auch beim Korrigieren der Angaben.
+- Die Bestätigungsseite bleibt erreichbar, auch wenn das Formular inzwischen abgelaufen ist.
+- Ist ein Termin nicht mehr veröffentlicht, führen alte Buchungslinks zur Übersicht statt auf eine Fehlerseite.
+- Die Buchung funktioniert auch, wenn du sie über Elementgruppen, Module oder die Event-Liste mit Leser-Modul einbindest.
+- Leise Texte und Eingabefelder haben mehr Kontrast.
+
+**Nach dem Update:** Im Contao Manager unter Systemwartung den Prod-Cache leeren und neu erzeugen. Hast du eigene Vorlagen im Template Studio überschrieben, sieh sie dir einmal an: Die neue Oberfläche bringt neue Vorlagen mit.
 
 ## 0.1.1 vom 30. September 2026
 
