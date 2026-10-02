@@ -1,5 +1,11 @@
 # Seminare: Was ist neu?
 
+## 0.2.1 vom 2. Oktober 2026
+
+**Verbessert**
+- Seminarbuchung und Terminliste haben CSS-ID/Klasse und Sichtbarkeitseinstellungen wie normale Contao-Elemente. Varianten aus dem Theme lassen sich so ohne Template-Änderung zuweisen.
+- Mit dem Widerruf-Bundle 1.1 bekommen auch die Seminar-Mails das neue, ruhigere Mail-Layout; die Mail an dich selbst begrüßt nicht mehr die Teilnehmerin.
+
 ## 0.2.0 vom 2. Oktober 2026
 
 **Neu**

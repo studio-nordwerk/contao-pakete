@@ -1,5 +1,10 @@
 # Mini-Shop: Was ist neu?
 
+## 0.4.2 vom 2. Oktober 2026
+
+**Verbessert**
+- Produktliste, Produktseite, Warenkorb, Kasse und das Warenkorb-Modul haben jetzt CSS-ID/Klasse und Template-Auswahl sowie Sichtbarkeitseinstellungen wie normale Contao-Elemente. So lassen sich Varianten aus dem Theme ohne Template-Änderung zuweisen.
+
 ## 0.4.1 vom 2. Oktober 2026
 
 **Verbessert**
