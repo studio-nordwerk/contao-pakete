@@ -1,5 +1,14 @@
 # Seminare: Was ist neu?
 
+## 0.2.2 vom 2. Oktober 2026
+
+**Verbessert**
+- Preise gibst du am Termin in Euro ein, zum Beispiel „490,00“ oder „1.290,50“, nicht mehr in Cent. Auch die Buchungen zeigen den Preis in Euro.
+- Die Mails haben einen eigenen Menüpunkt: Inhalte → Seminar-Mails. Dort stehen alle Betreffzeilen und Texte mit Vorschau und Testmail.
+- Im Assistenten gibt es die Betreffzeilen nicht mehr doppelt. Schritt 7 regelt nur noch die Erinnerung vor dem Termin und verlinkt auf die Mails. Eigene Betreffzeilen aus dem Assistenten werden beim Update übernommen.
+
+**Nach dem Update:** Im Contao Manager die Datenbank aktualisieren und den Prod-Cache leeren. Dieses ZIP lässt sich allein hochladen.
+
 ## 0.2.1 vom 2. Oktober 2026
 
 **Verbessert**

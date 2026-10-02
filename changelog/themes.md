@@ -2,6 +2,18 @@
 
 Jedes Theme besteht aus zwei ZIPs: der Theme-Basis und dem Theme selbst. Lade bei jedem Update immer beide zusammen im Contao Manager hoch.
 
+## 0.4.0 vom 2. Oktober 2026
+
+**Neu**
+- Ein Assistent für den Start: Bei leerer Website fragt „Shop einrichten“ bzw. „Seminar einrichten“ zuerst, ob du mit einer fertigen Beispielseite oder ohne starten möchtest. Danach geht es direkt mit deinen eigenen Angaben weiter.
+- Kopfbereich ohne Template-Änderung: Im Frontend-Modul „Kopf“ wählst du den Startpunkt der Navigation (Seiten blendest du wie gewohnt über „Im Menü verstecken“ aus) sowie Text und Ziel eines hervorgehobenen Buttons, oder blendest ihn aus.
+- Die Buttons im großen Startbereich (Hero) haben eigene Texte, zum Beispiel „Zum Sortiment“ statt „Alle Produkte“.
+
+**Verbessert**
+- Die Navigation folgt jetzt der Website, auf der sie steht, auch wenn du die Demo-Seiten durch eigene ersetzt hast.
+
+**Nach dem Update:** Lade die Theme-Basis und dein Theme zusammen hoch, dann die Datenbank aktualisieren (neue Felder) und den Prod-Cache leeren.
+
 ## 0.3.1 vom 2. Oktober 2026
 
 **Verbessert**

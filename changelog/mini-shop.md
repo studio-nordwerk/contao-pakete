@@ -1,5 +1,15 @@
 # Mini-Shop: Was ist neu?
 
+## 0.4.3 vom 2. Oktober 2026
+
+**Verbessert**
+- Preise in Euro statt Cent: Am Produkt gibst du „12,90“ ein, die Produktliste im Backend zeigt „12,90 €“. Versandpauschale und „Kostenlos ab“ im Assistenten ebenfalls in Euro.
+- Seiten wählst du im Assistenten aus einer Liste nach Website gruppiert, eingerückt wie im Seitenbaum und mit Suchfeld.
+- Die Mails haben einen eigenen Menüpunkt: Inhalte → Shop-Mails, mit Vorschau und Testmail. Alte Links aus dem Assistenten führen weiter dorthin.
+- Alle Texte im Shop (Produktliste, Warenkorb, Kasse, Bestätigung) kommen aus Sprachdateien. Englische Seiten zeigen den Shop auf Englisch, und einzelne Texte lassen sich im Projekt anpassen (siehe Anleitung „Texte anpassen“). Rechtlich vorgegebene Texte wie „Zahlungspflichtig bestellen“ sind dort markiert.
+
+**Nach dem Update:** Im Contao Manager den Prod-Cache leeren. Dieses ZIP lässt sich allein hochladen.
+
 ## 0.4.2 vom 2. Oktober 2026
 
 **Verbessert**
