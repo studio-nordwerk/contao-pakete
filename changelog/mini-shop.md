@@ -5,6 +5,8 @@
 **Verbessert**
 - Produktliste, Produktseite, Warenkorb, Kasse und das Warenkorb-Modul haben jetzt CSS-ID/Klasse und Template-Auswahl sowie Sichtbarkeitseinstellungen wie normale Contao-Elemente. So lassen sich Varianten aus dem Theme ohne Template-Änderung zuweisen.
 
+**Nach dem Update:** Kommst du von 0.4.0 oder älter, lade den Widerrufsbutton 1.1 zusammen mit dem Mini-Shop hoch (siehe 0.4.1).
+
 ## 0.4.1 vom 2. Oktober 2026
 
 **Verbessert**
@@ -18,7 +20,7 @@
 - Klammern aus den Rechtstexten erscheinen in Mails nicht mehr als „&#40;“.
 - Die Rechtsform steht nicht mehr als interner Wert („sole“) in der Mail, leere Angaben erzeugen keine Leerzeilen mehr.
 
-**Nach dem Update:** Im Contao Manager den Prod-Cache leeren und neu erzeugen. Das Widerruf-Bundle wird dabei auf 1.1 aktualisiert.
+**Nach dem Update:** Der Mini-Shop braucht ab dieser Version den Widerrufsbutton 1.1. Lade im Contao Manager beide ZIPs zusammen hoch (Mini-Shop und Widerrufsbutton, beide auf deiner Download-Seite) und wende die Änderungen gemeinsam an. Wird nur der Mini-Shop hochgeladen, bricht der Manager mit „conflicts with your root composer.json require (1.0.1)“ ab. Danach den Prod-Cache leeren und neu erzeugen.
 
 ## 0.4.0 vom 2. Oktober 2026
 

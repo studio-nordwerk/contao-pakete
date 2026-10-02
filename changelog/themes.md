@@ -1,5 +1,10 @@
 # Shop-Theme und Seminar-Theme: Was ist neu?
 
+## 0.3.1 vom 2. Oktober 2026
+
+**Verbessert**
+- Frische Installation ohne Seiten: Die Contao-Startseite zeigt einen Hinweis mit dem Link „Demo-Seiten anlegen“, und „Shop einrichten“ bzw. „Seminar einrichten“ beginnt mit diesem Schritt. Ein Klick legt eine fertige Beispielseite an, beim Shop-Theme mit Startseite, Shop, Beispielprodukten und Kategorien, Warenkorb, Kasse und Rechtstext-Seiten. Danach passt du alles in Contao an oder löschst es. Sobald die Website Seiten hat, verschwindet der Hinweis.
+
 ## 0.3.0 vom 2. Oktober 2026
 
 **Neu**
