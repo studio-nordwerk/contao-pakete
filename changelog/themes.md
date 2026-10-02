@@ -1,9 +1,13 @@
 # Shop-Theme und Seminar-Theme: Was ist neu?
 
+Jedes Theme besteht aus zwei ZIPs: der Theme-Basis und dem Theme selbst. Lade bei jedem Update immer beide zusammen im Contao Manager hoch.
+
 ## 0.3.1 vom 2. Oktober 2026
 
 **Verbessert**
 - Frische Installation ohne Seiten: Die Contao-Startseite zeigt einen Hinweis mit dem Link „Demo-Seiten anlegen“, und „Shop einrichten“ bzw. „Seminar einrichten“ beginnt mit diesem Schritt. Ein Klick legt eine fertige Beispielseite an, beim Shop-Theme mit Startseite, Shop, Beispielprodukten und Kategorien, Warenkorb, Kasse und Rechtstext-Seiten. Danach passt du alles in Contao an oder löschst es. Sobald die Website Seiten hat, verschwindet der Hinweis.
+
+**Nach dem Update:** Lade im Contao Manager beide ZIPs zusammen hoch, die Theme-Basis und dein Theme (Shop- oder Seminar-Theme), und wende die Änderungen gemeinsam an. Danach den Prod-Cache leeren.
 
 ## 0.3.0 vom 2. Oktober 2026
 
