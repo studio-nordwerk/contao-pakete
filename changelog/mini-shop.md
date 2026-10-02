@@ -1,5 +1,17 @@
 # Mini-Shop: Was ist neu?
 
+## 0.4.0 vom 2. Oktober 2026
+
+**Neu**
+- Produktlisten als Karussell: Im Produktlisten-Element wählst du unter „Darstellung“ zwischen Raster und Karussell. Das Karussell zeigt die Produkte nebeneinander zum Wischen, ideal für „Neu im Shop“ auf der Startseite und auf dem Handy. Es nutzt unser kostenloses Karussell-Bundle; ist es nicht installiert, erscheint wie bisher das Raster.
+
+**Verbessert**
+- Der Warenkorb arbeitet ruhiger und verlässlicher: Jede Änderung (Plus, Minus, Menge, Entfernen) wird sofort gespeichert. Während der Shop kurz speichert, halten alle Bedienelemente still, danach zeigt der Warenkorb den gespeicherten Stand. Doppelte oder verschluckte Klicks gibt es nicht mehr, und die Warenkorbseite lädt dabei nicht mehr komplett neu.
+- Vier Produkte im Raster stehen auf mittelgroßen Bildschirmen zwei mal zwei statt drei plus eins.
+- Produktnamen in Listen unter einer Zwischenüberschrift wie „Neu im Shop“ haben die passende Überschriftenebene, das hilft Screenreadern und Suchmaschinen.
+
+**Nach dem Update:** Im Contao Manager unter Systemwartung die Datenbank aktualisieren (neues Feld „Darstellung“) und den Prod-Cache leeren und neu erzeugen. Für das Karussell zusätzlich `nordwerk/contao-carousel-bundle` installieren.
+
 ## 0.3.0 vom 2. Oktober 2026
 
 **Neu**
