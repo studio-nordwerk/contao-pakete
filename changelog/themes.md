@@ -2,6 +2,19 @@
 
 Jedes Theme besteht aus zwei ZIPs: der Theme-Basis und dem Theme selbst. Lade bei jedem Update immer beide zusammen im Contao Manager hoch.
 
+## 0.5.0 vom 4. Oktober 2026
+
+**Neu**
+- Navigation mit Bordmitteln von Contao: Das Menü der Kopfzeile ist jetzt ein normales Modul „Navigationsmenü“, die beiden Spalten der Fußzeile sind Module „Individuelle Navigation“. Du findest sie unter Layout → Themes → Frontend-Module als „Hauptnavigation“, „Fußzeile: Seiten“ und „Fußzeile: Rechtliches“ und pflegst sie wie in jeder Contao-Website.
+- Untermenüs: Erhöhst du im Modul „Hauptnavigation“ das Stoplevel, zeigt die Kopfzeile Unterseiten als Aufklappmenü, das Mobilmenü als eingerückte Liste.
+- Weiterleitungsseiten (intern und extern) erscheinen jetzt im Menü.
+
+**Verbessert**
+- Die Module heißen wie die Layoutbereiche in Contao: „Kopfzeile“ und „Fußzeile“ statt „Kopf“ und „Fuß“. Das Feld im Theme heißt „Anordnung der Kopfzeile“.
+- In den Modulen Kopfzeile und Fußzeile wählst du nur noch, welches Navigationsmodul erscheint. Die Felder „Startpunkt der Navigation“ und „Weitere Seiten“ entfallen.
+
+**Nach dem Update:** Lade die Theme-Basis und dein Theme zusammen hoch, dann die Datenbank aktualisieren und den Prod-Cache leeren. Dabei entstehen die drei Navigationsmodule automatisch mit deinen bisherigen Links. Die Seitenspalte der Fußzeile ist danach eine feste Auswahl: Neue Seiten fügst du im Modul „Fußzeile: Seiten“ hinzu. Im Seminar-Theme heißt der Link „Alle Termine“ dort jetzt wie die Seite, also „Termine“.
+
 ## 0.4.0 vom 2. Oktober 2026
 
 **Neu**
