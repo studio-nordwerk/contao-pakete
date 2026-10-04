@@ -2,6 +2,14 @@
 
 Jedes Theme besteht aus zwei ZIPs: der Theme-Basis und dem Theme selbst. Lade bei jedem Update immer beide zusammen im Contao Manager hoch.
 
+## 0.5.1 vom 4. Oktober 2026
+
+**Verbessert**
+- Kopfzeile und Fußzeile hängen nicht mehr an den Demo-Seiten: Das Logo führt zur ersten Seite deiner Website. Den hervorgehobenen Button der Kopfzeile stellst du im Modul „Kopfzeile“ ein (Ziel und Text); ohne Ziel erscheint kein Button.
+- Shop-Theme: Im Modul „Fußzeile“ wählst du die Seite hinter dem Link „Vertrag widerrufen“. Der Wortlaut des Links bleibt fest.
+
+**Nach dem Update:** Lade die Theme-Basis und dein Theme zusammen hoch, dann die Datenbank aktualisieren und den Prod-Cache leeren. Deine bisherigen Ziele (Termine-Button, Widerrufsseite) werden dabei übernommen.
+
 ## 0.5.0 vom 4. Oktober 2026
 
 **Neu**
