@@ -1,5 +1,13 @@
 # Mini-Shop: Was ist neu?
 
+## 0.4.4 vom 5. Oktober 2026
+
+**Verbessert**
+- Eigene Gruppe „Mini-Shop“: Produktliste, Produkt, Warenkorb und Kasse stehen in der Auswahl der Inhaltselemente nicht mehr unter „Text-Elemente“, der Mini-Warenkorb bei den Frontend-Modulen nicht mehr unter „Verschiedenes“. Bestehende Elemente bleiben unverändert.
+- Alle Shop-Elemente und der Mini-Warenkorb haben jetzt den Bereich „Zugriffsschutz“, wie jedes Contao-Element.
+
+**Nach dem Update:** Im Contao Manager den Prod-Cache leeren. Dieses ZIP lässt sich allein hochladen.
+
 ## 0.4.3 vom 2. Oktober 2026
 
 **Verbessert**

@@ -1,5 +1,13 @@
 # Seminare: Was ist neu?
 
+## 0.2.3 vom 5. Oktober 2026
+
+**Verbessert**
+- Eigene Gruppe „Seminare“: Seminarbuchung und Seminarliste stehen in der Auswahl der Inhaltselemente nicht mehr unter „Text-Elemente“. Bestehende Elemente bleiben unverändert.
+- Beide Elemente haben jetzt den Bereich „Zugriffsschutz“, wie jedes Contao-Element.
+
+**Nach dem Update:** Im Contao Manager den Prod-Cache leeren.
+
 ## 0.2.2 vom 2. Oktober 2026
 
 **Verbessert**

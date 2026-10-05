@@ -4,6 +4,16 @@ Seit dem 5. Oktober 2026 reicht eine ZIP je Theme: Du lädst nur dein Theme im C
 
 Hast du die Theme-Basis früher als eigene ZIP hochgeladen, lade sie bei Updates weiterhin zusammen mit dem Theme hoch. Du findest sie unter deinem persönlichen Download-Link mit dem Zusatz `contao-theme-base/latest.zip`. Die Hinweise „Theme-Basis und Theme zusammen hochladen“ in den Abschnitten unten gelten nur für diesen Fall.
 
+## 0.5.3 vom 5. Oktober 2026
+
+**Verbessert**
+- Die Module und Elemente der Themes stehen dort, wo man sie in Contao sucht: Kopfzeile und Fußzeile beider Themes unter „Navigation“, Shop-Hero, Shop-Vorteile und Shop-Kategorien in der Gruppe „Mini-Shop“.
+- Alle Theme-Module und Theme-Elemente haben jetzt den Bereich „Zugriffsschutz“, wie jedes Contao-Element.
+- Shop-Theme: Im Modul „Kopfzeile“ zeigt das Feld „Mini-Warenkorb“ nur noch die Warenkorb-Module des eigenen Themes.
+- Seminar-Theme: Im Modul „Termin und Buchung“ wählst du die Seminarbuchung aus einer Liste, statt eine ID einzutippen. Das Modul hat außerdem eine Template-Auswahl.
+
+**Nach dem Update:** Im Contao Manager den Prod-Cache leeren. Am besten zusammen mit Mini-Shop 0.4.4 bzw. Seminare 0.2.3 aktualisieren, dann erscheinen auch deren Elemente in den neuen Gruppen.
+
 ## 0.5.2 vom 5. Oktober 2026
 
 **Verbessert**
