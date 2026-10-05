@@ -1,6 +1,8 @@
 # Shop-Theme und Seminar-Theme: Was ist neu?
 
-Jedes Theme besteht aus zwei ZIPs: der Theme-Basis und dem Theme selbst. Lade bei jedem Update immer beide zusammen im Contao Manager hoch.
+Seit dem 5. Oktober 2026 reicht eine ZIP je Theme: Du lädst nur dein Theme im Contao Manager hoch, die Theme-Basis holt der Manager selbst.
+
+Hast du die Theme-Basis früher als eigene ZIP hochgeladen, lade sie bei Updates weiterhin zusammen mit dem Theme hoch. Du findest sie unter deinem persönlichen Download-Link mit dem Zusatz `contao-theme-base/latest.zip`. Die Hinweise „Theme-Basis und Theme zusammen hochladen“ in den Abschnitten unten gelten nur für diesen Fall.
 
 ## 0.5.2 vom 5. Oktober 2026
 
