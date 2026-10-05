@@ -2,6 +2,13 @@
 
 Jedes Theme besteht aus zwei ZIPs: der Theme-Basis und dem Theme selbst. Lade bei jedem Update immer beide zusammen im Contao Manager hoch.
 
+## 0.5.2 vom 5. Oktober 2026
+
+**Verbessert**
+- Shop-Theme und Seminar-Theme verlangen jetzt mindestens die Theme-Basis 0.5.1. So kann kein Theme mehr mit einer älteren Basis laufen, in der der Link „Vertrag widerrufen“ und der Button der Kopfzeile noch fehlen.
+
+**Nach dem Update:** Lade die Theme-Basis und dein Theme zusammen hoch und wende die Änderungen gemeinsam an. Danach den Prod-Cache leeren.
+
 ## 0.5.1 vom 4. Oktober 2026
 
 **Verbessert**
