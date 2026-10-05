@@ -4,6 +4,15 @@ Seit dem 5. Oktober 2026 reicht eine ZIP je Theme: Du lädst nur dein Theme im C
 
 Hast du die Theme-Basis früher als eigene ZIP hochgeladen, lade sie bei Updates weiterhin zusammen mit dem Theme hoch. Du findest sie unter deinem persönlichen Download-Link mit dem Zusatz `contao-theme-base/latest.zip`. Die Hinweise „Theme-Basis und Theme zusammen hochladen“ in den Abschnitten unten gelten nur für diesen Fall.
 
+## 0.5.4 vom 5. Oktober 2026
+
+**Verbessert**
+- Shop-Hero: Das Bild hat jetzt die Contao-Auswahl „Bildgröße“. Ohne Angabe bleibt der bisherige Zuschnitt.
+- Shop-Hero: Die Felder heißen „Ziel des ersten Buttons“ und „Ziel des zweiten Buttons“ und passen damit zu jeder Seite, nicht nur zu Shop und „Über uns“. Ohne eigenen Text trägt der erste Button den Namen der gewählten Seite.
+- Abschnitte (Hero, Seitenkopf, Bild und Text, Person, Logos): mit dem Paket „Nordwerk Abschnitte“ 0.1.1 gibt es dort ebenfalls die Auswahl „Bildgröße“. Der Contao Manager holt es beim Update von selbst.
+
+**Nach dem Update:** Im Contao Manager den Prod-Cache leeren.
+
 ## 0.5.3 vom 5. Oktober 2026
 
 **Verbessert**
