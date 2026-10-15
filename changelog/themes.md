@@ -4,6 +4,14 @@ Seit dem 5. Oktober 2026 reicht eine ZIP je Theme: Du lädst nur dein Theme im C
 
 Hast du die Theme-Basis früher als eigene ZIP hochgeladen, lade sie bei Updates weiterhin zusammen mit dem Theme hoch. Du findest sie unter deinem persönlichen Download-Link mit dem Zusatz `contao-theme-base/latest.zip`. Die Hinweise „Theme-Basis und Theme zusammen hochladen“ in den Abschnitten unten gelten nur für diesen Fall.
 
+## 0.5.5 vom 14. Oktober 2026
+
+**Behoben**
+- Shop-Theme: Auf Unterseiten wie `/shop/lavendelseife` luden Stylesheets und Favicon nicht (404), weil das Demo-Layout sie ohne `/` am Anfang einband. Neue Demo-Importe verwenden absolute Pfade, bestehende Demo-Layouts korrigiert die Datenbankmigration.
+- Shop-Theme: Demo-Produkte werden so gespeichert, dass der neue Kategorie-Filter des Mini-Shops 0.4.5 sie findet.
+
+**Nach dem Update:** Im Contao Manager die Datenbank aktualisieren und den Prod-Cache leeren.
+
 ## 0.5.4 vom 5. Oktober 2026
 
 **Verbessert**

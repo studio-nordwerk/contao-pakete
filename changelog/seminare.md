@@ -1,5 +1,12 @@
 # Seminare: Was ist neu?
 
+## 0.2.4 vom 14. Oktober 2026
+
+**Behoben**
+- Die Terminseite ergab eine 404-Seite, wenn auf ihr Contaos eigene Eventliste ohne Leser-Modul stand. Die Seminarbuchung allein reicht jetzt für die Terminseite, ein Event-Leser-Modul ist nicht nötig. Die Anleitung nennt den Schritt ausdrücklich: Seminarbuchung auf die Seite, die im Kalender als Weiterleitungsseite eingetragen ist.
+
+**Nach dem Update:** Im Contao Manager den Prod-Cache leeren.
+
 ## 0.2.3 vom 5. Oktober 2026
 
 **Verbessert**

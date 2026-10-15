@@ -1,12 +1,33 @@
 # Mini-Shop: Was ist neu?
 
+Jeder Eintrag nennt unter „Templates geändert“ die Templates, die sich mit der Version geändert haben. Hast du eines davon im Template Studio überschrieben, hat deine Fassung Vorrang. Vergleiche sie dann mit dem neuen Original.
+
+## 0.4.5 vom 14. Oktober 2026
+
+**Neu**
+- Unterkategorien: Eine Kategorie bekommt eine „Übergeordnete Kategorie“, etwa Seifen › Olivenseifen. Eine Produktliste mit „Seifen“ zeigt die Produkte aller Unterkategorien automatisch mit. In allen Auswahllisten steht der ganze Pfad.
+- Produktliste: „Kurzbeschreibung anzeigen“ blendet die Kurzbeschreibung unter dem Produktnamen ein, ohne Template-Änderung.
+- Produktliste: „Text bei leerer Liste“, zum Beispiel „Hier kommen bald neue Produkte“. Ohne eigenen Text steht dort „Hier sind noch keine Produkte.“
+- Produktverwaltung: Im Filter-Feld lässt sich nach Kategorie und Veröffentlichung filtern, und die Kategorien stehen in der Liste neben Preis und Bestand.
+- Templates: `detail.categories` (Produktseite) und `product.categories` (Karte) enthalten alle Kategorien des Produkts mit `id`, `name` und `alias`, zum Beispiel `{% if 'seifen' in detail.categories|column('alias') %}`.
+- Startklar-Check und `mini-shop:doctor` melden Produktbilder unter 1400 Pixel. Empfohlen: quadratisch, mindestens 1400 × 1400 Pixel, Motiv mittig.
+- Anleitung „In ein bestehendes Theme einbauen“ mit den CSS-Variablen für Akzentfarbe, Ecken, Linien, Kartenschatten, Bildformat und Abstände (neu: `--mini-shop-card-ratio`, `--mini-shop-card-shadow`, `--mini-shop-grid-gap`).
+
+**Behoben**
+- Eine Produktliste ohne eigene Überschrift gibt kein leeres `<h2></h2>` mehr aus.
+- Produktbilder in der Übersicht: Die Karte schnitt die Bilder erst auf 4:3 und zeigte sie dann quadratisch, dadurch fehlte bei quadratischen Fotos oben und unten etwas. Die Karte nutzt jetzt einen quadratischen Ausschnitt.
+
+**Templates geändert:** `_product_card`, `_product_list`. Hast du eines davon im Template Studio überschrieben, vergleiche deine Fassung mit dem neuen Original.
+
+**Nach dem Update:** Im Contao Manager die Datenbank aktualisieren (neue Felder für Unterkategorie, Kurzbeschreibung und Leertext) und den Prod-Cache leeren. Voraussetzung ist der Widerrufsbutton ab 1.1, siehe 0.4.1.
+
 ## 0.4.4 vom 5. Oktober 2026
 
 **Verbessert**
 - Eigene Gruppe „Mini-Shop“: Produktliste, Produkt, Warenkorb und Kasse stehen in der Auswahl der Inhaltselemente nicht mehr unter „Text-Elemente“, der Mini-Warenkorb bei den Frontend-Modulen nicht mehr unter „Verschiedenes“. Bestehende Elemente bleiben unverändert.
 - Alle Shop-Elemente und der Mini-Warenkorb haben jetzt den Bereich „Zugriffsschutz“, wie jedes Contao-Element.
 
-**Nach dem Update:** Im Contao Manager den Prod-Cache leeren. Dieses ZIP lässt sich allein hochladen.
+**Nach dem Update:** Im Contao Manager den Prod-Cache leeren. Dieses ZIP lässt sich allein hochladen, wenn der Widerrufsbutton schon auf 1.1 steht. Kommst du von 0.4.0 oder älter, siehe 0.4.1.
 
 ## 0.4.3 vom 2. Oktober 2026
 
