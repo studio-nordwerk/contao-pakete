@@ -2,6 +2,17 @@
 
 Jeder Eintrag nennt unter „Templates geändert“ die Templates, die sich mit der Version geändert haben. Hast du eines davon im Template Studio überschrieben, hat deine Fassung Vorrang. Vergleiche sie dann mit dem neuen Original.
 
+## 0.4.6 vom 16. Oktober 2026
+
+**Neu**
+- Verkauf pro Stück: Am Produkt wählst du unter „Verkauf“ zwischen „Nach Füllmenge (mit Grundpreis)“ und „Pro Stück (ohne Grundpreis)“. Pro Stück verschwinden Nettofüllmenge, Einheit und Grundpreis, etwa für Keramik, Bilder, Deko oder Schmuck. Das Feld „Inhaltsstoffe“ heißt dann „Material“ und ist optional. Auf der Produktseite, in der Bestellübersicht und in den Mails steht „Material: …“.
+- Anfertigung auf Bestellung: Unter „Verfügbarkeit“ wählst du „Auf Lager“ (mit Bestand wie bisher) oder „Auf Bestellung angefertigt“ mit einer eigenen Lieferzeit, zum Beispiel „ca. 3 Wochen“. Das Produkt ist immer bestellbar und zieht keinen Bestand ab. Karte, Produktseite, Warenkorb, Kasse, Bestellübersicht vor dem Bestellknopf, Bestellbestätigung und die Bestellansicht im Backend zeigen „Wird nach Bestellung angefertigt, Lieferzeit ca. 3 Wochen“. Stehen auch Produkte vom Lager im Warenkorb, gilt für sie weiter die Lieferzeit des Shops.
+- Templates: `detail.soldByPiece`, `detail.madeToOrder` und `detail.deliveryTime` (auf der Karte `product.madeToOrder` und `product.deliveryTime`).
+
+**Templates geändert:** `_buy_box`, `_product_card`, `_info_accordion`, `_cart`, `_checkout_form`, `_order_summary`, `_mandatory_information`. Hast du eines davon im Template Studio überschrieben, vergleiche deine Fassung mit dem neuen Original.
+
+**Nach dem Update:** Im Contao Manager die Datenbank aktualisieren (neue Felder „Verkauf“, „Verfügbarkeit“ und „Lieferzeit“) und den Prod-Cache leeren. Bestehende Produkte bleiben „Nach Füllmenge“ und „Auf Lager“. Voraussetzung ist der Widerrufsbutton ab 1.1, siehe 0.4.1.
+
 ## 0.4.5 vom 14. Oktober 2026
 
 **Neu**
