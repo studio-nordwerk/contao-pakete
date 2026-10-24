@@ -4,6 +4,20 @@ Seit dem 5. Oktober 2026 reicht eine ZIP je Theme: Du lädst nur dein Theme im C
 
 Hast du die Theme-Basis früher als eigene ZIP hochgeladen, lade sie bei Updates weiterhin zusammen mit dem Theme hoch. Du findest sie unter deinem persönlichen Download-Link mit dem Zusatz `contao-theme-base/latest.zip`. Die Hinweise „Theme-Basis und Theme zusammen hochladen“ in den Abschnitten unten gelten nur für diesen Fall.
 
+## 0.5.7 vom 23. Oktober 2026
+
+**Behoben**
+- Der Contao Manager meldete bei einer frischen Installation „funktioniert nicht mit Contao 5.7.*“ und sperrte den Upload, obwohl die Pakete ab Contao 5.7.12 laufen. Theme-Basis, Shop-Theme und Seminar-Theme verlangen jetzt Contao 5.7 und schließen ältere Versionen als 5.7.12 auf anderem Weg aus; die Meldung erscheint nicht mehr. Bei älteren Paketversionen hilft: beim Contao-Paket über das Zahnrad die Versionsbedingung auf `~5.7.12` stellen.
+
+**Nach dem Update:** Im Contao Manager den Prod-Cache leeren.
+
+## 0.5.6 vom 23. Oktober 2026
+
+**Neu**
+- Shop-Theme: passt zum Mini-Shop 0.5 mit Produktarten. Die Demo-Produkte sind als „Kosmetik und Pflege“ angelegt.
+
+**Nach dem Update:** Im Contao Manager den Prod-Cache leeren.
+
 ## 0.5.5 vom 14. Oktober 2026
 
 **Behoben**

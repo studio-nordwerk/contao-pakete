@@ -2,6 +2,34 @@
 
 Jeder Eintrag nennt unter „Templates geändert“ die Templates, die sich mit der Version geändert haben. Hast du eines davon im Template Studio überschrieben, hat deine Fassung Vorrang. Vergleiche sie dann mit dem neuen Original.
 
+## 0.6.0 vom 23. Oktober 2026
+
+**Neu**
+- Bezahlung bei Abholung: In Schritt 6 des Assistenten „Bezahlung bei Abholung anbieten (bar oder PayPal)“ einschalten. Die Zahlart erscheint an der Kasse nur zusammen mit Abholung; bei Versand ist sie ausgegraut. Die Bestellung zeigt „Wird bei Abholung bezahlt“ und bekommt keine Zahlungserinnerung. Beim Abholen setzt du sie in der Bestellverwaltung auf „Zahlung eingegangen“ und dann auf „Abgeholt“.
+- PayPal per QR-Code: Mit einem PayPal.me-Link (zum Beispiel `paypal.me/hofladen`) zeigen Danke-Seite und Bestellmail einen QR-Code und einen Link, in denen der Betrag schon steht.
+- Eigener Abholungstext: In Schritt 5 trägst du ein, wann und wo abgeholt wird, etwa „Fr + Sa 9–18 Uhr im Hofladen“. Der Text steht an der Kasse, in der Bestellprüfung und in der Mail. Ohne Text steht wie bisher „nach Absprache“.
+- Mengen ab 1000 g, 1000 ml und 100 cm stehen in kg, l und m: 5000 g erscheint als „5 kg“.
+
+**Behoben**
+- Der Contao Manager meldete bei einer frischen Installation „funktioniert nicht mit Contao 5.7.*“ und sperrte den Upload, obwohl die Pakete ab Contao 5.7.12 laufen. Die Pakete verlangen jetzt Contao 5.7 und schließen ältere Versionen als 5.7.12 auf anderem Weg aus; die Meldung erscheint nicht mehr. Bei älteren Paketversionen hilft: beim Contao-Paket über das Zahnrad die Versionsbedingung auf `~5.7.12` stellen.
+- Bietet der Shop Abholung an, zeigt der Warenkorb „Versand oder Abholung: Wahl an der Kasse“ statt Versandkosten und Gesamtpreis mit Versand.
+- Bei Abholung stehen in Bestellübersicht und Mail keine Lieferzeit mehr und kein „Wir versenden, sobald die Zahlung eingegangen ist“, sondern „Wir legen Ihre Bestellung zur Abholung bereit“.
+
+**Templates geändert:** `_cart`, `_checkout_form`, `_order_review`, `_mandatory_information`, `_confirmation`, `_info_accordion`. Hast du eines davon im Template Studio überschrieben, vergleiche deine Fassung mit dem neuen Original.
+
+**Nach dem Update:** Mini-Shop 0.6.0 zusammen mit dem Payment-Bundle 1.1.0 hochladen (und dem Widerrufsbutton 1.1.1, wenn du ihn ebenfalls aktualisierst). Danach im Contao Manager den Prod-Cache leeren. Eine Datenbankänderung gibt es nicht.
+
+## 0.5.0 vom 23. Oktober 2026
+
+**Neu**
+- Produktarten: Am Produkt wählst du die Art, etwa Kosmetik, Lebensmittel, Kerzen, Textilien, Keramik/Deko, Schmuck oder Stoffe. Die Art bestimmt, welche Angaben das Produkt abfragt und zeigt, zum Beispiel Inhaltsstoffe, Zutaten und Nährwerte, Material, Maße, Pflege oder Sicherheitshinweise.
+- Mengen in g, kg, ml, l, cm, m, m² oder Stück, mit Grundpreis je kg, l, m oder m², wo die Preisangabenverordnung ihn verlangt. „Pro Stück“ aus 0.4.6 ist jetzt die Einheit „Stück“.
+- Hersteller und Produktsicherheit: Name, Anschrift und E-Mail des Herstellers sowie Warn- und Sicherheitshinweise stehen auf der Produktseite. Ohne eigene Angabe nennt der Shop dich als Verkäufer.
+
+**Templates geändert:** `_buy_box`, `_info_accordion`, `_order_summary`.
+
+**Nach dem Update:** Im Contao Manager die Datenbank aktualisieren und den Prod-Cache leeren. Bestehende Produkte bekommen eine Produktart (nach Füllmenge „Kosmetik und Pflege“, pro Stück „Keramik, Kunst und Deko“); bitte die Produktart in jedem Produkt prüfen.
+
 ## 0.4.6 vom 16. Oktober 2026
 
 **Neu**

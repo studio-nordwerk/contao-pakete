@@ -1,5 +1,12 @@
 # Seminare: Was ist neu?
 
+## 0.2.5 vom 23. Oktober 2026
+
+**Behoben**
+- Der Contao Manager meldete bei einer frischen Installation „funktioniert nicht mit Contao 5.7.*“ und sperrte den Upload, obwohl die Pakete ab Contao 5.7.12 laufen. Die Pakete verlangen jetzt Contao 5.7 und schließen ältere Versionen als 5.7.12 auf anderem Weg aus; die Meldung erscheint nicht mehr. Bei älteren Paketversionen hilft: beim Contao-Paket über das Zahnrad die Versionsbedingung auf `~5.7.12` stellen.
+
+**Nach dem Update:** Im Contao Manager den Prod-Cache leeren.
+
 ## 0.2.4 vom 14. Oktober 2026
 
 **Behoben**
