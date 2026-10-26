@@ -4,6 +4,35 @@ Seit dem 5. Oktober 2026 reicht eine ZIP je Theme: Du lädst nur dein Theme im C
 
 Hast du die Theme-Basis früher als eigene ZIP hochgeladen, lade sie bei Updates weiterhin zusammen mit dem Theme hoch. Du findest sie unter deinem persönlichen Download-Link mit dem Zusatz `contao-theme-base/latest.zip`. Die Hinweise „Theme-Basis und Theme zusammen hochladen“ in den Abschnitten unten gelten nur für diesen Fall.
 
+## 0.6.0 vom 26. Oktober 2026
+
+**Neu**
+- Layout → Theme einrichten: ein eigener Menüpunkt für Theme-Basis, Shop- und Seminar-Theme. Er zeigt auf einer leeren Website die Willkommensfrage, importiert die Demo und listet vor einem Ersetzen auf, welche Datensätze überschrieben werden. Demo-Import und Ersetzen bleiben Administratoren vorbehalten, weil sie Seiten, Produkte und Einstellungen über alle Rechte hinweg schreiben. Jeder importierte Datensatz bekommt eine Version, nach einem Ersetzen ist der frühere Stand unter „Versionen“ wiederherstellbar. Das Modul hat ein eigenes Recht unter „Erlaubte Module“ in der Benutzergruppe.
+- Die Assistenten „Shop einrichten“ und „Seminar einrichten“ sind wieder die unveränderten Assistenten der Pakete und laufen mit deren eigenen Rechten, auch für Nicht-Administratoren.
+- Das Logo darf eine SVG-Datei sein und hat das Feld „Bildgröße des Logos“. Shop-Kategorien, Shop-Hero und Seminargalerie haben eine wählbare Bildgröße; ohne Auswahl gelten Standardgrößen des Themes.
+- Neue Vorlage `nw_theme` für Seitenlayouts vom Typ „Twig-Layout mit Slots“. Das bisherige Demo-Layout bleibt klassisch; bestehende Layouts werden nicht umgestellt.
+- Alle Frontend-Texte der Themes, ihre Backend-Beschriftungen und Fehlermeldungen gibt es auf Deutsch und Englisch.
+- Seminar-Theme: Das Modul „Seminar: Termin und Buchung“ hat die Felder „Vorlage der Seminarbuchung“ und „Bildgröße“. Das versteckte Buchungselement unter dem Theme gibt es nicht mehr.
+
+**Verbessert**
+- Farben, Schriften und weitere Einstellungen des Theme-Formulars gelten für jedes Seitenlayout deines Themes, nicht mehr nur dort, wo das Kopfzeilen-Modul sitzt. Die Stylesheets des Themes sind versioniert und laden damit nach Updates neu. Sie stehen im Seitenkopf vor deinen „Externen Stylesheets“, deine eigenen Dateien haben also Vorrang.
+- Das Feld „Zusätzliche head-Tags“ im Seitenlayout enthält keine Theme-Links mehr. Eigene Tags und das Favicon bleiben.
+- Theme-Seiten werden beim Speichern des Theme-Formulars im Seitencache aktualisiert.
+- Hero: Die gewählte Überschriftenebene wird ausgegeben. Ohne Überschrift erscheint keine mehr (der Demo-Text als Ersatz entfällt).
+- Navigation: Eine im Navigationsmodul gewählte eigene Vorlage hat Vorrang vor der Vorlage des Themes.
+- Seminar-Theme: Die Fußzeile baut wie beim Shop auf der gemeinsamen Fußzeile der Theme-Basis auf. Preis und Datum der Terminkarten folgen der Seitensprache.
+- Die Terminseite mit Buchung wird nicht mehr von der Zwischenspeicherung ausgeschlossen; die Seminarbuchung steuert den Cache selbst.
+- Das Seminar-Theme verlangt Contao 5.7.12 oder neuer, wie die übrigen Pakete.
+
+**Entfernt**
+- Die ungenutzten Felder „Zweites Bild“, „Zweite Überschrift“ und „Zweiter Text“ des Shop-Hero sind weg. Contao bietet bei der Datenbankaktualisierung an, die Spalten zu löschen; das ist optional.
+
+**Templates geändert:** `nw_shop_header`, `nw_shop_footer`, `nw_shop_hero`, `nw_shop_categories`, `nw_theme_header`, `nw_theme_footer`, `nw_seminar_header`, `nw_seminar_footer`, `seminar_booking_nw`, `_event`. Neu als Twig-Fassung: `nav_nw`, `mod_nw_navigation`, `mod_faqpage_nw` und `event_nw_seminar` (die bisherigen HTML5-Dateien entfallen), dazu `_nw_design_variables` und das Layout `nw_theme`. Hast du eines davon im Template Studio überschrieben, vergleiche deine Fassung mit dem neuen Original. Eine bisherige HTML5-Überschreibung von `event_nw_seminar` funktioniert weiter. Bei `nav_nw`, `mod_nw_navigation` und `mod_faqpage_nw` prüfe bitte nach dem Update, ob deine Überschreibung noch greift.
+
+**Nach dem Update:** Lade die Theme-Basis 0.6.0 zusammen mit deinem Theme hoch. Das Shop-Theme 0.6.0 braucht Mini-Shop 0.7 (und damit Payment 1.2.0, siehe Mini-Shop 0.7.0), das Seminar-Theme 0.6.0 braucht Seminar 0.3. Lade die passenden ZIPs im selben Durchgang hoch. Danach im Contao Manager die Datenbank aktualisieren und den Prod-Cache leeren. Die Migration entfernt die Theme-Stylesheet-Links aus dem Kopf deiner Layouts (die Theme-Basis lädt sie jetzt selbst), überträgt beim Seminar-Theme die Vorlage des versteckten Buchungselements ins Modul und löscht dieses Element samt verwaister Reste. Eigene Head-Tags und das Favicon bleiben. Hast du beim Widerrufsbutton die Grundgestaltung abgeschaltet, entfällt mit der Migration auch dessen Stylesheet im Layout-Kopf; die Widerrufsseite nutzt dann nur noch deine eigenen Styles. Du musst nichts neu einrichten, und Terminseiten unter `/termine/<alias>` behalten ihre Adresse.
+
+**Neues Recht „Theme einrichten“:** Der Theme-Assistent war bisher nur Administratoren zugänglich, deshalb bekommt keine Gruppe das Recht automatisch. Sollen Redakteurinnen und Redakteure die Gestaltung ändern, hake „Theme einrichten“ in ihrer Benutzergruppe unter „Erlaubte Module“ an und gib unter „Erlaubte Felder“ die Gestaltungsfelder des Themes frei. Demo importieren und ersetzen können nur Administratoren; der Hinweis auf der Backend-Startseite erscheint deshalb nur ihnen. „Shop einrichten“ und „Seminar einrichten“ brauchen weiterhin ihr eigenes Modulrecht. Ein Ersetzen bleibt durch Bestätigung und die Sperre nach Bestellungen bzw. Buchungen geschützt.
+
 ## 0.5.7 vom 23. Oktober 2026
 
 **Behoben**

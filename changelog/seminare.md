@@ -1,5 +1,35 @@
 # Seminare: Was ist neu?
 
+## 0.3.0 vom 26. Oktober 2026
+
+**Neu**
+- Alle Einstellungen im Formular: Unter Seminar einrichten → „Alle Einstellungen im Formular bearbeiten“ bearbeitest du die Seminar-Einstellungen im gewohnten Contao-Formular, mit Versionen und Rechten über Benutzergruppen. Der Assistent und das Formular schreiben dieselben Einstellungen.
+- Rechtstextseiten und Stornobedingungen je Website: Im Startpunkt (Bereich „Seminarbuchung“) kannst du sie für diese Website oder Sprache abweichend festlegen. Leere Felder nutzen die Seminar-Einstellungen. Anbieterdaten und Bankverbindung gelten weiter für die ganze Installation. Buchung und Startklar-Check prüfen je Seminar-Website.
+- Die Seminarliste hat eine Kalenderauswahl, mit der du sie auf bestimmte Kalender beschränkst. Ohne Auswahl zeigt sie wie bisher alle Kalender, bestehende Listen bleiben also gefüllt.
+- Terminseite: Seitentitel, Beschreibung, Robots-Angabe und kanonische URL des Events werden wie in Contaos Event-Leser übernommen, die Inhaltselemente des Events werden angezeigt, der Teaser dient als Ersatz. Die Buchungsschritte sind auf „noindex“ gesetzt.
+- Die Seminar-Texte, die Teilnehmeransicht, die Startklar-Warnungen und `seminar:doctor` gibt es auf Deutsch und Englisch; Preise erscheinen in der Sprache der Seite (`1.290,50 €` bzw. `€1,290.50`).
+
+**Verbessert**
+- Seminarliste und Terminseite beachten geschützte Kalender (nur für berechtigte Mitgliedergruppen) sowie „Anzeigen ab/bis“ und die Veröffentlichung des Events. Beim Abschluss einer Buchung wird das erneut geprüft.
+- Liste und Terminseite sind cachebar und damit schneller. Buchungen, Stornos und Nachrücken aktualisieren die freien Plätze sofort; Reverse-Proxys ohne Tag-Unterstützung fallen auf die Cache-Zeit zurück. Die Buchungsschritte werden weiter nie zwischengespeichert.
+- Die Terminseite legt keine Session mehr an. Sie beginnt erst, wenn jemand auf „Jetzt buchen“ klickt.
+- Die Seminarliste nutzt die gewählte Überschriftenebene. Es gibt keine automatische `<h1>` „Seminare“ mehr; ohne Überschrift im Element erscheint keine.
+- Die Teilnehmerverwaltung (Liste, Detail, CSV-Export, Zertifikat, Aktionen) zeigt nur Termine der Kalender, die du bearbeiten darfst.
+- Die Mails bearbeitest du nur noch mit dem Recht „Seminar-Mails“. Ohne das Recht gibt es keinen Link und eine Zugriffsverweigerung (403). Alte Links leiten weiter.
+- Das Zertifikat verschickst du per Button (Formular mit Sicherheits-Token). Der alte Link mit `mail_certificate=1` verschickt nichts mehr.
+- Die Datumsfelder „Anmeldeschluss“ sowie Bescheid- und Gültigkeitsdaten von Bildungsurlaub und Steuerbescheinigung sind wirklich leer, wenn du nichts einträgst. Die Migration setzt frühere Nullwerte zurück.
+- Englische Mails: Preise im englischen Format; „Ihre Buchung wurde storniert.“ und „Verwendungszweck:“ sind übersetzt.
+
+**Behoben**
+- Im Mail-Editor ließen sich Akzentfarben mit `#` nicht speichern, und Absendernamen wurden umkodiert gespeichert. Texte, die früher so gespeichert wurden (zum Beispiel `&amp;`), bleiben, bis du sie neu speicherst.
+- Die Bestätigungsmeldungen in der Teilnehmeransicht (etwa nach dem Zertifikatsversand) werden jetzt angezeigt.
+
+**Templates geändert:** `_accordion` (zeigt die Inhalte des Events im Abschnitt „Inhalte“) und `seminar_event_list` (Überschrift aus dem Element). Hast du eines davon im Template Studio überschrieben, vergleiche deine Fassung mit dem neuen Original. Stylest du `.seminar-list-intro h1`, stelle das auf `.seminar-list-intro :is(h1, h2, h3)` um. In der Buchung sind `requestToken` und `flowToken` auf der Terminseite leer, neu ist `eventContent`.
+
+**Nach dem Update:** Seminar 0.3.0 lässt sich allein hochladen; das Seminar-Theme 0.6.0 braucht Seminar 0.3.0 und wird danach oder zusammen damit hochgeladen. Danach im Contao Manager die Datenbank aktualisieren und den Prod-Cache leeren. Die Migration übernimmt deine bisherigen Einstellungen in die neuen Felder, ohne Neueinrichtung. Zu lange Texte werden gekürzt und gemeldet; das Original bleibt gespeichert. Die alte Einstellungsspalte (`data`) wird im nächsten Release entfernt.
+
+**Neue Rechte:** Die Seminar-Einstellungen im Formular nutzen Tabellen- und Feldrechte, weil sie Bankdaten und Rechtstexte enthalten. Die Migration gibt allen Gruppen und Benutzern mit eigenen Rechten, die „Seminar einrichten“ haben, einmalig die Felder und das Tabellenrecht „Bearbeiten“ für die Seminar-Einstellungen, damit niemand ausgesperrt wird. Danach gilt deine Rechtevergabe: Wer später Einstellungen im Formular ändern soll, braucht diese Rechte in der Benutzergruppe. Der Assistent selbst braucht nur das Modulrecht. Wer Teilnehmende sehen soll, braucht außerdem das Recht, den jeweiligen Kalender zu bearbeiten.
+
 ## 0.2.5 vom 23. Oktober 2026
 
 **Behoben**

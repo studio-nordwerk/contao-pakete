@@ -2,6 +2,34 @@
 
 Jeder Eintrag nennt unter „Templates geändert“ die Templates, die sich mit der Version geändert haben. Hast du eines davon im Template Studio überschrieben, hat deine Fassung Vorrang. Vergleiche sie dann mit dem neuen Original.
 
+## 0.7.0 vom 26. Oktober 2026
+
+**Neu**
+- Shop-Einstellungen: Unter Inhalte → Shop-Einstellungen bearbeitest du alle Einstellungen im gewohnten Contao-Formular, mit Versionen, Feldrechten und denselben Prüfungen wie im Assistenten. Der Assistent „Shop einrichten“ bleibt und schreibt dieselben Einstellungen.
+- Shop-Seiten am Startpunkt: Im Startpunkt der Website wählst du unter „Mini-Shop“ die Shop-Seiten (Shop, Warenkorb, Kasse und so weiter) für genau diese Website. Mehrere Websites in einer Installation brauchen so keine Umwege mehr.
+- Bestellungen als Contao-Liste: Inhalte → Bestellungen hat Filter (Status, Monat), Suche (Bestellnummer, Name, E-Mail), Sortierung und eine Detailansicht. Name, E-Mail und Summe stehen in der Liste. „Bestellung verwalten“ öffnet wie bisher die Aktionen; Links aus bereits verschickten Mails funktionieren weiter.
+- Produkte: Ein Augen-Symbol veröffentlicht oder verbirgt ein Produkt direkt in der Liste, ebenso bei Kategorien. „Anzeigen ab/bis“ beachten Shop, Sitemap, Weiterleitung und Bestandsreservierung.
+- Suchmaschinen: Produkte haben den Abschnitt „Suchmaschinen“ mit Seitentitel, Beschreibung und Robots-Angabe, samt Vorschau. Produktseiten stehen je Startpunkt in der `sitemap.xml`, geschützte Seiten sowie Seiten und Produkte mit „noindex“ nicht.
+- Das Produktlisten-Element hat das Standardfeld „Bildgröße“. Ohne Auswahl bleibt es bei der bisherigen Kartengröße.
+- Die Oberfläche des Assistenten, der Bestellansicht, des Mail-Editors und der Produkt- und Kategorieverwaltung gibt es auf Deutsch und Englisch.
+
+**Verbessert**
+- Der Seitencache aktualisiert Produktlisten und Produktseiten gezielt, wenn du Produkte, Kategorien oder Einstellungen speicherst, umschaltest oder löschst. Auch Bestandsänderungen durch Bestellungen und Stornos wirken sofort. Erreicht „Anzeigen ab/bis“ eines Produkts seinen Zeitpunkt, zeigt der Seitencache den alten Stand bis zum Ablauf der Cache-Zeit.
+- Stylesheets und Skripte des Shops werden nur noch einmal pro Seite im Seitenkopf bzw. am Seitenende eingebunden. Das Warenkorb-Fragment enthält keine eigenen Link-Tags mehr; das Mini-Warenkorb-Modul bindet die Styles ein.
+- Der Seitenmodus berücksichtigt „Unsichtbar“ und „Anzeigen ab/bis“ des Elements sowie die Veröffentlichung des Artikels. Der Startklar-Check warnt, wenn auf einer Seite verschiedene Shop-Elemente gemischt sind.
+- Der Assistent bietet nur Seiten an, die in deiner Seitenverwaltung freigegeben sind (Seitenfreigaben deines Kontos), und legt Seiten, Artikel und Elemente nur an, wenn deine Rechte in der Seitenstruktur es erlauben.
+- Die Überschriftenebenen h5 und h6 der Produktliste werden übernommen.
+- Bezahlung bei Abholung stellen im Assistenten Administratoren und Benutzer mit dem Recht „Zahlung einrichten“ ein.
+
+**Behoben**
+- Im Mail-Editor ließen sich Absender und Akzentfarbe nicht speichern: Das Zeichen `#` (Hex-Farben) und `&` wurden umkodiert. Das funktioniert jetzt.
+
+**Templates geändert:** `_buy_box`, `_cart`, `_cart_fragment`, `_checkout_form`, `_gallery`, `_product_card`, `_product_list`, `mini_shop_product_list`, `mini_shop_cart`, `_mini_shop_cart_sheet`. Hast du eines davon im Template Studio überschrieben, vergleiche deine Fassung mit dem neuen Original. Überschreibungen mit eigenen `<link>`- oder `<script>`-Tags im Body stellst du am besten auf `{% add 'mini_shop_…' to head|body %}` um. Überschreibt deine `_product_card` die Bildgröße fest mit `_mini_shop_card`, funktioniert sie weiter, ignoriert aber die im Element gewählte Größe.
+
+**Nach dem Update:** Mini-Shop 0.7.0 nur zusammen mit dem Payment-Bundle 1.2.0 hochladen: Payment 1.2.0 verweigert ältere Mini-Shops. Den Widerrufsbutton 1.2.0 am besten gleich mit aktualisieren. Danach im Contao Manager die Datenbank aktualisieren und den Prod-Cache leeren. Zwischen dem Hochladen und der Datenbankaktualisierung ist das Frontend nicht nutzbar, weil neue Spalten fehlen; spiele beides also direkt nacheinander ein. Deine bisherige Einrichtung wird vollständig übernommen, einschließlich der Shop-Seiten (sie stehen danach am Startpunkt), des Rechnungspräfixes und der Bestellungen. Du musst nichts neu einrichten. Prüfe nach dem Update kurz die Startklar-Anzeige.
+
+**Neue Rechte:** Das Formular „Shop-Einstellungen“ nutzt Contaos Tabellen- und Feldrechte. Die Migration gibt Benutzergruppen und Benutzern mit eigenen Rechten, die „Shop einrichten“ haben, einmalig „Shop-Einstellungen“ und „Shop-Mails“ samt Feld- und Tabellenrechten. Halter von „Produkte“ bekommen einmalig die neuen Felder für Suchmaschinen und „Anzeigen ab/bis“. Entziehst du später ein Recht, bleibt es entzogen. Neu angelegte Gruppen bekommen die Rechte wie in Contao üblich von dir. Die Bezahlung bei Abholung im Assistenten ist nicht mit diesen Rechten gekoppelt, sondern mit „Zahlung einrichten“; gib dieses Modul den Gruppen frei, die sie schalten sollen (siehe Payment 1.2.0). Solange auf den Shop-Einstellungen kein Feldrecht vergeben ist, zeigt der Assistent alle Felder.
+
 ## 0.6.0 vom 23. Oktober 2026
 
 **Neu**
