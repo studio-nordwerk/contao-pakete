@@ -2,6 +2,15 @@
 
 Jeder Eintrag nennt unter „Templates geändert“ die Templates, die sich mit der Version geändert haben. Hast du eines davon im Template Studio überschrieben, hat deine Fassung Vorrang. Vergleiche sie dann mit dem neuen Original.
 
+## 0.7.1 vom 27. Oktober 2026
+
+**Neu**
+- Liefergebiet als Text: In den Shop-Einstellungen (und im Assistenten, Schritt 5) gibt es das optionale Feld „Liefergebiet“, zum Beispiel „Musterdorf und Nachbarorte“. Ist es ausgefüllt, stehen auf Produktseite, in Kasse, Bestellübersicht, Pflichtangaben und Bestellmail dieses Gebiet statt „innerhalb Deutschlands“. Ist es leer, bleibt alles wie bisher. Das Gebiet wird mit der Bestellung gespeichert; ältere Bestellungen zeigen weiter den bisherigen Text. Danke an Heike für die Umsetzung.
+
+**Templates geändert:** `_checkout_form`, `_info_accordion`, `_mandatory_information`, `_order_review`. Hast du eines davon im Template Studio überschrieben, zeigt deine Fassung das Liefergebiet erst, wenn du sie mit dem neuen Original abgleichst.
+
+**Nach dem Update:** Im Contao Manager die Datenbank aktualisieren (eine neue Spalte) und den Prod-Cache leeren. Gruppen, die die Shop-Einstellungen bearbeiten dürfen, bekommen das neue Feld einmalig freigeschaltet.
+
 ## 0.7.0 vom 26. Oktober 2026
 
 **Neu**
