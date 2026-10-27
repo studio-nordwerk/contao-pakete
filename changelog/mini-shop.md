@@ -2,6 +2,18 @@
 
 Jeder Eintrag nennt unter „Templates geändert“ die Templates, die sich mit der Version geändert haben. Hast du eines davon im Template Studio überschrieben, hat deine Fassung Vorrang. Vergleiche sie dann mit dem neuen Original.
 
+## 0.7.2 vom 27. Oktober 2026
+
+**Neu**
+- Ausnahmen vom Widerrufsrecht: Im Produkt wählst du unter „Widerrufsrecht“, ob für dieses Produkt eine gesetzliche Ausnahme gilt: schnell verderbliche Ware wie frische Lebensmittel, Anfertigung nach Kundenwunsch (jeweils kein Widerrufsrecht) oder Ware mit Hygiene-Versiegelung (das Widerrufsrecht erlischt nach dem Öffnen), nach § 312g Abs. 2 BGB. Statt „14 Tage Widerrufsrecht“ erscheint dann der passende Hinweis auf der Produktseite, im Warenkorb, in der Bestellübersicht vor dem Bestellbutton und in der Bestellbestätigung. Ohne Auswahl bleibt alles wie bisher. Bestehende Bestellungen ändern sich nicht. Ob eine Ausnahme für dein Produkt gilt, klärst du im Zweifel mit deiner Rechtsberatung. Danke an Heike für den Vorschlag.
+
+**Behoben**
+- Shop-Mails: Nach dem Speichern meldete die Browser-Konsole „Form responses must redirect to another location“. Der Mail-Editor leitet jetzt wie jedes Contao-Formular weiter. Mit dem Widerrufsbutton 1.2.1 sieht er außerdem aus wie die übrigen Backend-Formulare.
+
+**Templates geändert:** `_buy_box`, `_cart`, `_info_accordion`, `_order_summary`. Hast du eines davon im Template Studio überschrieben, erscheint der Hinweis zum Widerrufsrecht erst, wenn du deine Fassung mit dem neuen Original abgleichst.
+
+**Nach dem Update:** Am besten zusammen mit dem Widerrufsbutton 1.2.1 hochladen. Danach im Contao Manager die Datenbank aktualisieren (eine neue Spalte am Produkt) und den Prod-Cache leeren. Gruppen, die Produkte bearbeiten dürfen, bekommen das neue Feld einmalig freigeschaltet.
+
 ## 0.7.1 vom 27. Oktober 2026
 
 **Neu**
