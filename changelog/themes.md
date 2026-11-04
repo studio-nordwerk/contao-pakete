@@ -1,8 +1,17 @@
-# Shop-Theme und Seminar-Theme: Was ist neu?
+# Shop-Theme, Hofladen-Theme und Seminar-Theme: Was ist neu?
 
 Seit dem 5. Oktober 2026 reicht eine ZIP je Theme: Du lädst nur dein Theme im Contao Manager hoch, die Theme-Basis holt der Manager selbst.
 
 Hast du die Theme-Basis früher als eigene ZIP hochgeladen, lade sie bei Updates weiterhin zusammen mit dem Theme hoch. Du findest sie unter deinem persönlichen Download-Link mit dem Zusatz `contao-theme-base/latest.zip`. Die Hinweise „Theme-Basis und Theme zusammen hochladen“ in den Abschnitten unten gelten nur für diesen Fall.
+
+## 0.6.1 vom 4. November 2026
+
+**Neu**
+- Hofladen-Theme für Höfe und Direktvermarkter: Die Kundschaft bestellt online vor und holt im Hofladen ab, auf Wunsch mit Bezahlung vor Ort. Es baut auf dem Shop-Theme und dem Mini-Shop auf. Unter Layout → Theme einrichten legt es die Demo „Hof Muster“ an: Startseite mit Hofterminen, häufigen Fragen und Kundenstimmen, Vorbestellen mit zwei Kategorien, Über den Hof, Kontakt, Warenkorb, Kasse und markierte Platzhalter für die Rechtstexte. Frische Produkte der Demo tragen den Ausschluss vom Widerrufsrecht für schnell verderbliche Ware.
+- Zweifarbige Überschriften im Hofladen-Theme: `{{nw_accent::…}}` setzt eine grüne Handschrift-Zeile, `{{nw_eyebrow::…}}` eine kleine Zeile darüber. Beides schreibst du im Feld Überschrift, ohne HTML.
+- Theme-Basis: neues Schriftpaar „Fraunces / Helvetica“ im Theme-Formular. Fraunces liegt auf deinem Server, Helvetica ist eine Systemschrift.
+
+**Nach dem Update:** Shop- und Seminar-Theme ändern sich nur in der Versionsnummer; lade sie wie gewohnt hoch und leere im Contao Manager den Prod-Cache. Für das Hofladen-Theme lädst du das Shop-Theme 0.6.1 und das Hofladen-Theme 0.6.1 im selben Durchgang hoch, dazu Mini-Shop 0.7.2 oder neuer. Für Hoftermine und häufige Fragen vorher die Contao-Pakete Kalender und FAQ installieren. Danach die Datenbank aktualisieren.
 
 ## 0.6.0 vom 26. Oktober 2026
 
