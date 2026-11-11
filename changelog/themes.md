@@ -4,6 +4,13 @@ Seit dem 5. Oktober 2026 reicht eine ZIP je Theme: Du lädst nur dein Theme im C
 
 Hast du die Theme-Basis früher als eigene ZIP hochgeladen, lade sie bei Updates weiterhin zusammen mit dem Theme hoch. Du findest sie unter deinem persönlichen Download-Link mit dem Zusatz `contao-theme-base/latest.zip`. Die Hinweise „Theme-Basis und Theme zusammen hochladen“ in den Abschnitten unten gelten nur für diesen Fall.
 
+## 0.6.2 vom 11. November 2026
+
+**Verbessert**
+- Das Seminar-Theme passt zu Seminare 0.4.0 mit Gutscheinen und Rechnungen. Das Gutscheinfeld erscheint im Buchungsformular des Themes, sobald ein passender Gutschein aktiv ist, die Rechnungsanschrift, sobald du Rechnungen eingeschaltet hast.
+
+**Nach dem Update:** Für Seminare 0.4.0 lädst du Seminar 0.4.0 und das Seminar-Theme 0.6.2 im selben Durchgang hoch, danach die Datenbank aktualisieren und den Prod-Cache leeren. Theme-Basis, Shop- und Hofladen-Theme ändern sich nur in der Versionsnummer; ein Update ist nicht nötig.
+
 ## 0.6.1 vom 4. November 2026
 
 **Neu**
