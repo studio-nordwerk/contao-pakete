@@ -8,7 +8,7 @@ Jeder Eintrag nennt unter „Templates geändert“ die Templates, die sich mit 
 - Ausnahmen vom Widerrufsrecht: Im Produkt wählst du unter „Widerrufsrecht“, ob für dieses Produkt eine gesetzliche Ausnahme gilt: schnell verderbliche Ware wie frische Lebensmittel, Anfertigung nach Kundenwunsch (jeweils kein Widerrufsrecht) oder Ware mit Hygiene-Versiegelung (das Widerrufsrecht erlischt nach dem Öffnen), nach § 312g Abs. 2 BGB. Statt „14 Tage Widerrufsrecht“ erscheint dann der passende Hinweis auf der Produktseite, im Warenkorb, in der Bestellübersicht vor dem Bestellbutton und in der Bestellbestätigung. Ohne Auswahl bleibt alles wie bisher. Bestehende Bestellungen ändern sich nicht. Ob eine Ausnahme für dein Produkt gilt, klärst du im Zweifel mit deiner Rechtsberatung. Danke an Heike für den Vorschlag.
 
 **Behoben**
-- Shop-Mails: Nach dem Speichern meldete die Browser-Konsole „Form responses must redirect to another location“. Der Mail-Editor leitet jetzt wie jedes Contao-Formular weiter. Mit dem Widerrufsbutton 1.2.1 sieht er außerdem aus wie die übrigen Backend-Formulare.
+- Shop-Mails: Nach dem Speichern meldete die Browser-Konsole „Form responses must redirect to another location“. Der Mail-Editor leitet jetzt wie jedes Contao-Formular weiter. Mit dem Widerrufsbutton 1.2.1 sieht er außerdem aus wie die übrigen Backend-Formulare, und die Reiter heißen Zahlungserinnerung, Bestellbestätigung, Info an Händler, Zahlungseingang, Versandbestätigung und Storno statt „shop customer“ usw.
 
 **Templates geändert:** `_buy_box`, `_cart`, `_info_accordion`, `_order_summary`. Hast du eines davon im Template Studio überschrieben, erscheint der Hinweis zum Widerrufsrecht erst, wenn du deine Fassung mit dem neuen Original abgleichst.
 

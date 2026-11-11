@@ -4,6 +4,13 @@ Seit dem 5. Oktober 2026 reicht eine ZIP je Theme: Du lädst nur dein Theme im C
 
 Hast du die Theme-Basis früher als eigene ZIP hochgeladen, lade sie bei Updates weiterhin zusammen mit dem Theme hoch. Du findest sie unter deinem persönlichen Download-Link mit dem Zusatz `contao-theme-base/latest.zip`. Die Hinweise „Theme-Basis und Theme zusammen hochladen“ in den Abschnitten unten gelten nur für diesen Fall.
 
+## 0.6.3 vom 11. November 2026
+
+**Verbessert**
+- Seminar-Theme, Demo-Import: Die Weiterbildung „Seifenhandwerk für Kursleiterinnen“ dauert jetzt zwei Tage, so zeigt die Demo auch den Tagesplan. Außerdem trägt der Import „Lernraum Mira“ als Absender der Seminar-Mails ein, mit Du-Anrede wie auf der Website.
+
+**Nach dem Update:** Das Seminar-Theme 0.6.3 ändert nur den Demo-Import. Bereits angelegte Seiten und Termine bleiben unverändert, ein Update ist also nur für neue Demo-Importe nötig. Theme-Basis, Shop- und Hofladen-Theme ändern sich nur in der Versionsnummer.
+
 ## 0.6.2 vom 11. November 2026
 
 **Verbessert**
