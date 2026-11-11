@@ -1,5 +1,19 @@
 # Seminare: Was ist neu?
 
+## 0.4.0 vom 11. November 2026
+
+**Neu**
+- Gutscheine: Unter Inhalte → Gutscheine legst du Rabattcodes (Prozent oder Euro) und Wertgutscheine mit Restguthaben an, auf Wunsch nur für bestimmte Kalender oder Termine, mit Einlöse-Limit und Gültigkeitszeitraum. Die Liste zeigt je Code „3 von 10 eingelöst“ bzw. das Restguthaben; Stornierungen geben die Einlösung wieder frei. Das Buchungsformular zeigt das Feld „Gutscheincode“, sobald ein passender Code aktiv ist. Prüfseite, Mails und GiroCode rechnen mit dem reduzierten Betrag.
+- Rechnungen: In den Seminar-Einstellungen schaltest du Rechnungen ein und legst deinen Nummernkreis fest (zum Beispiel `RE-{Y}-0001`, auf Wunsch jedes Jahr neu beginnend). Mit „Nächste laufende Nummer“ setzt du einen bisherigen Nummernkreis fort; die Nummer lässt sich nur erhöhen. Jede kostenpflichtige Buchung bekommt eine PDF-Rechnung im Anhang der Bestätigung, eine Stornierung automatisch eine Stornorechnung. Unter Inhalte → Rechnungen findest du alle Belege mit PDF-Download und CSV-Export für die Buchhaltung. Ausgestellte Rechnungen lassen sich nicht mehr ändern oder löschen.
+- Bei kostenpflichtigen Terminen fragt das Buchungsformular die Rechnungsanschrift ab, bei Firmen auch Firmenname und USt-IdNr. Die Teilnehmeransicht zeigt Betrag und Rechnungsnummern und hat den Button „Rechnung erstellen“ für Buchungen ohne Rechnung.
+- Unter „Anbieter“ gibt es die Felder Steuernummer und USt-IdNr. Der Startklar-Check und `seminar:doctor` prüfen sie, sobald Rechnungen eingeschaltet sind.
+
+**Templates geändert:** `_booking_form`, `_review`, `_summary` und `seminar_booking` zeigen Gutschein, Rabatt und Rechnungsanschrift, neu sind die Partials `seminar/_billing_fields` und `seminar/_voucher_field`. Hast du eines davon im Template Studio überschrieben, vergleiche deine Fassung mit dem neuen Original, sonst fehlen dort Gutscheinfeld und Rechnungsanschrift. Neue Template-Variablen: `amounts`, `voucherField`, `invoicesEnabled`, `countries`. Das Seminar-Theme braucht kein Update.
+
+**Nach dem Update:** Seminar 0.4.0 lässt sich allein hochladen. Danach im Contao Manager die Datenbank aktualisieren und den Prod-Cache leeren. Die Migration legt Schutz-Trigger an, die ausgestellte Rechnungen vor Änderungen bewahren; fehlen dem Datenbankbenutzer dafür die Rechte, nennt sie den nächsten Schritt. Für Rechnungen unter „Anbieter“ Steuernummer oder USt-IdNr. eintragen.
+
+**Neue Rechte:** Die Menüpunkte „Gutscheine“ und „Rechnungen“ gibst du in den Benutzergruppen frei. Gruppen und Benutzer mit „Seminar einrichten“ bekommen die neuen Steuer- und Rechnungsfelder der Einstellungen einmalig automatisch.
+
 ## 0.3.0 vom 26. Oktober 2026
 
 **Neu**
