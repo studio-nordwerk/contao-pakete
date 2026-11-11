@@ -1,5 +1,12 @@
 # Seminare: Was ist neu?
 
+## 0.4.1 vom 11. November 2026
+
+**Behoben**
+- Rechnungen: In der Liste unter Inhalte → Rechnungen standen die Spaltenüberschriften eine Spalte zu weit links, und die Filter „Betrag“ und „Rechnungsnummer“ filterten in Wahrheit Art und Datum. Überschriften und Filter passen jetzt zu den Werten.
+
+**Nach dem Update:** Im Contao Manager den Prod-Cache leeren. Mit Seminar-Theme reicht das Seminar-Theme 0.6.2.
+
 ## 0.4.0 vom 11. November 2026
 
 **Neu**
