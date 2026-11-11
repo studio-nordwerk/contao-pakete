@@ -5,7 +5,7 @@
 **Verbessert**
 - Termine: „Ablauf und Tagesplan“ erscheint nur noch bei Terminen mit mehreren Tagen. Bei eintägigen Terminen wiederholte der Abschnitt nur Datum und Uhrzeit aus dem Kopf.
 - Startklar-Check und `seminar:doctor` warnen, wenn die PHP-Zeitzone deines Servers nicht Europe/Berlin ist. Contao zeigt Termine im Backend in dieser Zeitzone, die Seminarseiten immer in deutscher Zeit. Sonst stehen im Backend andere Uhrzeiten als auf der Website, zum Beispiel 9:00 statt 10:00. Abhilfe: in der PHP-Konfiguration `date.timezone = Europe/Berlin` setzen oder deinen Hoster darum bitten.
-- Seminar-Mails: Die Reiter heißen jetzt Zahlungserinnerung, Buchungsbestätigung, Info an Anbieter, Warteliste, Platz frei, Erinnerung, Absage und Teilnahmebestätigung statt „seminar payment reminder“ usw. Das kommt mit dem Widerrufsbutton 1.2.1.
+- Seminar-Mails: Die Reiter heißen jetzt Zahlungserinnerung, Buchungsbestätigung, Info an Anbieter, Warteliste, Platz frei, Erinnerung, Absage und Teilnahmebestätigung statt „seminar payment reminder“ usw. Das kommt mit dem Widerrufsbutton 1.2.2.
 
 **Behoben**
 - Rechnungen: In der Liste unter Inhalte → Rechnungen standen die Spaltenüberschriften eine Spalte zu weit links, und die Filter „Betrag“ und „Rechnungsnummer“ filterten in Wahrheit Art und Datum. Überschriften und Filter passen jetzt zu den Werten.
@@ -13,7 +13,7 @@
 
 **Templates geändert:** `seminar/_accordion` zeigt den Tagesplan nur bei mehreren Tagen.
 
-**Nach dem Update:** Im Contao Manager den Prod-Cache leeren. Am besten zusammen mit dem Widerrufsbutton 1.2.1 hochladen. Mit Seminar-Theme reicht das Seminar-Theme 0.6.2, mit 0.6.3 zeigt auch die Demo einen zweitägigen Termin.
+**Nach dem Update:** Im Contao Manager den Prod-Cache leeren. Am besten zusammen mit dem Widerrufsbutton 1.2.2 hochladen. Mit Seminar-Theme reicht das Seminar-Theme 0.6.2, mit 0.6.3 zeigt auch die Demo einen zweitägigen Termin.
 
 ## 0.4.0 vom 11. November 2026
 
