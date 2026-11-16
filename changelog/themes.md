@@ -1,8 +1,18 @@
-# Shop-Theme, Hofladen-Theme und Seminar-Theme: Was ist neu?
+# Shop-, Hofladen-, Seminar- und Studio-Theme: Was ist neu?
 
 Seit dem 5. Oktober 2026 reicht eine ZIP je Theme: Du lädst nur dein Theme im Contao Manager hoch, die Theme-Basis holt der Manager selbst.
 
 Hast du die Theme-Basis früher als eigene ZIP hochgeladen, lade sie bei Updates weiterhin zusammen mit dem Theme hoch. Du findest sie unter deinem persönlichen Download-Link mit dem Zusatz `contao-theme-base/latest.zip`. Die Hinweise „Theme-Basis und Theme zusammen hochladen“ in den Abschnitten unten gelten nur für diesen Fall.
+
+## 0.7.1 vom 16. November 2026
+
+**Neu**
+- Studio-Theme für Selbstständige, die Termine online annehmen: eine ruhige Website mit Startseite, Arbeiten, Leistungen, Über mich, Termin buchen und Kontakt. Unter Layout → Theme einrichten legt es die Demo „Studio Halm“ an, samt Terminart „Erstgespräch“, Projekten als Nachrichtenarchiv mit eigener Detailseite und markierten Platzhaltern für die Rechtstexte. Die Buchung ist im Theme durchgestaltet: Monatskalender, Uhrzeiten, Formular und Bestätigung, auch auf dem Telefon.
+- Das Studio-Theme baut auf der kostenlosen [Terminbuchung für Contao](https://www.nordwerk.studio/oss/contao-terminbuchung) auf (`nordwerk/contao-booking-bundle`, MIT). Der Contao Manager holt sie beim Hochladen des Themes selbst, ebenso die Theme-Basis.
+- Auch das Studio-Theme hat die Stile aus 0.7.0: Stil, Farbwelt, Schrift und Form im Theme-Formular und die Stil-Vorschau für Besucher.
+- Kursive Akzente in Überschriften des Studio-Themes: `{{nw_italic::…}}` im Feld Überschrift, ohne HTML.
+
+**Nach dem Update:** Theme-Basis, Shop-, Hofladen- und Seminar-Theme ändern sich nur in der Versionsnummer; ein Update ist nicht nötig. Für das Studio-Theme lädst du nur seine ZIP im Contao Manager hoch, vorher das Contao-Paket Nachrichten installieren. Danach die Datenbank aktualisieren.
 
 ## 0.7.0 vom 16. November 2026
 
