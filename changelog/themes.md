@@ -4,6 +4,21 @@ Seit dem 5. Oktober 2026 reicht eine ZIP je Theme: Du lädst nur dein Theme im C
 
 Hast du die Theme-Basis früher als eigene ZIP hochgeladen, lade sie bei Updates weiterhin zusammen mit dem Theme hoch. Du findest sie unter deinem persönlichen Download-Link mit dem Zusatz `contao-theme-base/latest.zip`. Die Hinweise „Theme-Basis und Theme zusammen hochladen“ in den Abschnitten unten gelten nur für diesen Fall.
 
+## 0.7.0 vom 16. November 2026
+
+**Neu**
+- Stile für Shop- und Seminar-Theme: Im Theme-Formular gibt es den neuen Abschnitt mit den Feldern „Stil“, „Farbwelt“, „Schrift“ und „Form“. Ein Stil ist eine fertige Gestaltung als Startpunkt, 19 stehen zur Wahl, von „Salbei ruhig“ bis „Nacht gold“. Er füllt Farben, Schrift und Form aus; danach bleibt jedes Feld einzeln änderbar.
+- Frei mischen: Statt eines ganzen Stils wählst du Farbwelt, Schrift und Form getrennt, aus 11 Farbwelten, 6 Schriften und 4 Formen. Die Farbwelt bringt auch Fehler-, Erfolgs- und Fokusfarben mit. Die Schrift bringt die Größen mit, die zu ihr passen. Die Form ändert Ecken, Buttons und Schatten; Abstände und Seitenbreite bleiben, wie sie sind.
+- Alle Schriften der Stile liegen auf deinem Server (SIL Open Font License). Es wird nichts von fremden Servern geladen.
+- „Stil-Vorschau für Besucher“: Ein Schalter im Theme-Formular blendet auf der Website einen Umschalter ein, mit dem man acht Stile und alle Mischungen aus Farbwelt, Schrift und Form mit den eigenen Inhalten ausprobiert. Die Auswahl gilt nur im eigenen Browser und ändert nichts an der Website. Gedacht für Demo-Seiten und die Abstimmung mit Kundinnen und Kunden; vor dem Start ausschalten. Eine Mischung lässt sich als Link weitergeben, zum Beispiel `?farbe=salbei&schrift=rund&form=weich`.
+
+**Verbessert**
+- Shop-, Seminar- und Theme-Basis-Stylesheets nehmen Farben, Schriften, Rundungen und Abstände jetzt durchgehend aus CSS-Variablen. Ohne gewählten Stil sieht deine Website genauso aus wie vorher; wir haben das Seite für Seite im Bildvergleich geprüft.
+
+**Nach dem Update:** Lade dein Theme 0.7.0 im Contao Manager hoch; die Theme-Basis 0.7.0 holt der Manager selbst. Danach die Datenbank aktualisieren (es kommen fünf Felder am Theme dazu) und den Prod-Cache leeren. Du musst nichts einstellen: Ohne Auswahl bleibt die Gestaltung deines Themes. Das Hofladen-Theme hat bewusst keine Stil-Auswahl, weil seine Gestaltung fest zum Hofladen gehört; es ändert sich nur in der Versionsnummer und verlangt das Shop-Theme 0.7.0, lade also beide im selben Durchgang hoch.
+
+**Templates geändert:** `_nw_design_variables`. Neu: `_nw_style_preview` und `_nw_style_preview_head` (Umschalter der Stil-Vorschau). Hast du `_nw_design_variables` im Template Studio überschrieben, vergleiche deine Fassung mit dem neuen Original, sonst greifen die Stile nicht.
+
 ## 0.6.3 vom 11. November 2026
 
 **Verbessert**
