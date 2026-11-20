@@ -7,7 +7,7 @@ body:
     id: paket
     attributes:
       label: Paket
-      options: [Mini-Shop, Seminare, Shop-Theme, Seminar-Theme]
+      options: [Mini-Shop, Seminare, Shop-Theme, Hofladen-Theme, Seminar-Theme, Studio-Theme, Theme-Basis, Widerrufsbutton, Zahlung, Terminbuchung, Carousel, Sheet, Galerie, Abschnitte, Teaser, Kundenstimmen]
     validations: { required: true }
   - type: input
     id: version
