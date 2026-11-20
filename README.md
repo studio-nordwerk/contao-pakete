@@ -1,15 +1,18 @@
 # Contao-Pakete von Studio Nordwerk
 
-Hier melden Kundinnen und Kunden Fehler und Wünsche zu unseren kommerziellen Contao-Paketen und sehen, was sich mit jeder Version geändert hat. Der Quellcode dieser Pakete ist nicht öffentlich.
+Hier meldest du Fehler und Wünsche zu allen Contao-Paketen von Studio Nordwerk und siehst, was sich mit jeder Version geändert hat. Das gilt auch für die Open-Source-Bundles: Ihre Repositories sind schreibgeschützte Spiegel, entwickelt wird intern.
 
 | Paket | Was es macht | Neuigkeiten |
 | --- | --- | --- |
 | [Mini-Shop](https://www.nordwerk.studio/contao/mini-shop) | Kleiner Shop für Contao: Produkte, Warenkorb, Kasse, Rechnungen, Widerrufsbutton | [Changelog](changelog/mini-shop.md) |
 | [Seminare](https://www.nordwerk.studio/contao/seminare) | Seminarbuchung an Contao-Events: Plätze, Warteliste, Vertragsmails, Bildungsurlaub | [Changelog](changelog/seminare.md) |
-| Shop-Theme und Seminar-Theme | Fertige Gestaltung mit Demo-Seiten für Mini-Shop und Seminare | [Changelog](changelog/themes.md) |
+| Themes (Shop, Hofladen, Seminar, Studio) | Fertige Gestaltung mit Demo-Seiten; die Theme-Basis ist Open Source ([contao-theme-base](https://github.com/studio-nordwerk/contao-theme-base)) | [Changelog](changelog/themes.md) |
+| [Widerrufsbutton](https://www.nordwerk.studio/oss/contao-withdrawal) | Elektronische Widerrufsfunktion nach § 356a BGB, Open Source ([contao-withdrawal](https://github.com/studio-nordwerk/contao-withdrawal)) | [Changelog](changelog/widerruf.md) |
+| [Zahlung](https://www.nordwerk.studio/oss/contao-payment) | Vorkasse, Stripe, Mollie und Bezahlung vor Ort für Shop und Seminare, Open Source ([contao-payment](https://github.com/studio-nordwerk/contao-payment)) | [Changelog](changelog/zahlung.md) |
+| [Terminbuchung](https://www.nordwerk.studio/oss/contao-terminbuchung) | Freie Termine buchen, mit Kalender-Abos und Webhooks, Open Source ([contao-booking-bundle](https://github.com/studio-nordwerk/contao-booking-bundle)) | [Changelog](changelog/terminbuchung.md) |
+| Bausteine | [Carousel](https://github.com/studio-nordwerk/contao-carousel), [Sheet](https://github.com/studio-nordwerk/contao-sheet), [Galerie](https://github.com/studio-nordwerk/contao-gallery), [Abschnitte](https://github.com/studio-nordwerk/contao-sections), [Teaser](https://github.com/studio-nordwerk/contao-teasers), [Kundenstimmen](https://github.com/studio-nordwerk/contao-testimonials), Open Source | `CHANGELOG.md` im jeweiligen Repository |
 
 Preise, Installation und Bestellung: [nordwerk.studio/contao](https://www.nordwerk.studio/contao).
-Unsere Open-Source-Bundles (Widerrufsbutton, Zahlung, Carousel, Sheet, Galerie) haben eigene Repositories unter [github.com/studio-nordwerk](https://github.com/studio-nordwerk).
 
 ## Fehler melden
 
